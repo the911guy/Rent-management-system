@@ -1,6 +1,6 @@
 <div layout:decorate="~{index}" layout:fragment="content">
     <h1 class="mt-4">Explore</h1>
-    <p class="lead">Search for cars in your region</p>
+    <p class="lead">Search for houses in your region</p>
     <hr>
 
     <form action="/" method="post" th:object="${selectedStationBean}">
@@ -26,18 +26,18 @@
     <div th:if="${cars != null}">
         <hr>
         <div th:switch="${carsListSize}" th:with="carsListSize=${#lists.size(cars)}">
-            <p class="text-center info" th:case="0">0 cars found.<br>There are no cars at this station.</p>
+            <p class="text-center info" th:case="0">0 houses found.<br>There are no houses available for rental in this city.</p>
             <div th:case="*">
                 <table class="table table-borderless table-hover table-sm">
                     <caption class="text-center info"
                              th:text="${carsListSize + (carsListSize == 1 ? ' car' : ' cars') + ' found'}"></caption>
                     <thead>
                     <tr>
-                        <th>Registration Number</th>
-                        <th>Construction Year</th>
-                        <th>Mileage (km)</th>
-                        <th>Model</th>
-                        <th>Station</th>
+                        <th>House Number</th>
+                        <th>BHK</th>
+                        <th>Street</th>
+                        <th>City</th>
+                        <th>Rent (per month)</th>
                     </tr>
                     </thead>
                     <tbody>
