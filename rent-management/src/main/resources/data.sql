@@ -5,15 +5,15 @@ values ('Los Angeles');
 insert into station (city)
 values ('Chicago');
 insert into house (house_nr, price, street, model, station_id)
-values ('house1', 20010, 'thisho', 'BMW', 1);
+values ('house1', 20010, 'thisho', '2BHK', 1);
 insert into house (house_nr, price, street, model, station_id)
-values ('house2', 20170, 'thisho', 'Seat', 2);
+values ('house2', 20170, 'thisho', '3BHK', 2);
 insert into house (house_nr, price, street, model, station_id)
-values ('house3', 20160, 'thisho', 'Audi', 3);
+values ('house3', 20160, 'thisho', '4BHK', 3);
 insert into house (house_nr, price, street, model, station_id)
-values ('house4', 20020, 'thisho', 'Mazda', 3);
+values ('house4', 20020, 'thisho', '2BHK', 3);
 insert into house (house_nr, price, street, model, station_id)
-values ('house5', 20030, 'homo', 'Mercedes', null);
+values ('house5', 20030, 'homo', '1BHK', null);
 insert into customer (customer_number, first_name, last_name)
 values (111111, 'Jeff', 'Heisenberg');
 insert into customer (customer_number, first_name, last_name)
